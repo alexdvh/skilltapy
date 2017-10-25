@@ -1,11 +1,12 @@
 import pandas as pd
 import numpy as np
+import json
 
 # from django.shortcuts import render
 from django.http import JsonResponse
-from .models import Skill, Country, DemandResult, DemandForecast
-
+from django.utils.dateformat import DateFormat
 from fbprophet import Prophet
+from .models import Skill, Country, DemandResult, DemandForecast
 
 
 def fbProphet(request):
@@ -24,7 +25,8 @@ def fbProphet(request):
                 .filter(skill_id=skill.skill_id) \
                 .filter(country_code=country.country_code)
             if demResModel.count() > 0:
-                demRes = demResModel.order_by('ds').values(
+                demRes = demResModel.order_by('ds') \
+                    .values(
                     'country_code',
                     'skill_id',
                     'query_id',
@@ -37,25 +39,35 @@ def fbProphet(request):
                     'y'
                 )
                 # Pandas using DataFrame to get list QuerySet from database
-                df = pd.DataFrame(list(demRes))
-                df['y'] = np.log(df['y'])
+                # ls = {
+                #     'ds': [],
+                #     'y': []
+                # }
+                # for de in demRes:
+                #     ls['ds'].append(DateFormat(de.ds).format('Y-m-d'))
+                #     ls['y'].append(de.y)
+
+                df = pd.DataFrame(data=list(demRes))
+                df['ds'] = df['jobs_since']
+                df['y'] = np.log(df['result'])
                 df['cap'] = 8.5
                 df.head()
-                print(df)
+
                 # Create Prophet
-                # m = Prophet()
-                # m.fit(df)
+                model = Prophet()
+                model.fit(df)
                 #
+                # print(df)
                 # # future
-                # future = m.make_future_dataframe(periods=365)
+                # future = model.make_future_dataframe(periods=365)
                 # future.tail()
                 #
                 # # forecast
-                # forecast = m.predict(future)
+                # forecast = model.predict(future)
                 # forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail()
                 #
-                # m.plot(forecast)
-                # m.plot_components(forecast)
-                # print(m.plot_components(forecast))
+                # model.plot(forecast)
+                # model.plot_components(forecast)
+                # print(model.plot_components(forecast).show())
 
-    return JsonResponse(list(skills), safe=False)
+    return JsonResponse(json.dumps(skills), safe=False)
