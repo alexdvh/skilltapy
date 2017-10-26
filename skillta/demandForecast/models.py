@@ -49,7 +49,7 @@ class DemandForecast(models.Model):
     day = models.IntegerField()
     week = models.IntegerField()
     year = models.IntegerField()
-    result = models.IntegerField()
+    result = models.FloatField()
 
 
 # DemandResult Model.
@@ -57,14 +57,14 @@ class DemandResult(models.Model):
     class Meta:
         db_table = 'demand_result'
 
-    result_id = models.AutoField(primary_key=True)
-    country_code = models.CharField(max_length=20)
-    skill_id = models.BigIntegerField()
-    query_id = models.BigIntegerField()
-    execution_date = models.DateTimeField()
-    jobs_since = models.DateTimeField()
-    period_days = models.IntegerField()
-    day = models.IntegerField()
-    week = models.IntegerField()
-    year = models.IntegerField()
-    result = models.IntegerField(default=0)
+    result_id = models.AutoField(primary_key=True, db_column='result_id')
+    country_code = models.CharField(max_length=20, db_column='country_code')
+    skill_id = models.BigIntegerField(db_column='skill_id')
+    query_id = models.BigIntegerField(db_column='query_id')
+    execution_date = models.DateTimeField(db_column='execution_date')
+    jobs_since = models.DateTimeField(db_column='jobs_since')
+    period_days = models.IntegerField(db_column='period_days')
+    day = models.IntegerField(db_column='day')
+    week = models.IntegerField(db_column='week')
+    year = models.IntegerField(db_column='year')
+    y = models.IntegerField(default=0, db_column='result')

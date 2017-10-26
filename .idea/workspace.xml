@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skillta/demandForecast/models.py" afterPath="$PROJECT_DIR$/skillta/demandForecast/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skillta/demandForecast/views.py" afterPath="$PROJECT_DIR$/skillta/demandForecast/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skillta/skillta/settings.py" afterPath="$PROJECT_DIR$/skillta/skillta/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +19,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skillta/demandForecast/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+            <state relative-caret-position="310">
+              <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="45" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -30,23 +31,12 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skillta/demandForecast/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="64" column="14" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="14" />
+            <state relative-caret-position="289">
+              <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
               <folding>
                 <element signature="e#77#777#0" expanded="false" />
                 <element signature="e#830#1093#0" expanded="false" />
-                <element signature="e#1160#1648#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forecaster.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/fbprophet/forecaster.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="755" column="18" lean-forward="false" selection-start-line="755" selection-start-column="18" selection-end-line="755" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -82,8 +72,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2115" />
-    <option name="y" value="-22" />
+    <option name="x" value="846" />
+    <option name="y" value="-12" />
     <option name="width" value="987" />
     <option name="height" value="711" />
   </component>
@@ -115,18 +105,6 @@
               <item name="skilltapy" type="462c0819:PsiDirectoryNode" />
               <item name="skillta" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="skilltapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skilltapy" type="462c0819:PsiDirectoryNode" />
-              <item name="skillta" type="462c0819:PsiDirectoryNode" />
-              <item name="demandForecast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skilltapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skilltapy" type="462c0819:PsiDirectoryNode" />
-              <item name="skillta" type="462c0819:PsiDirectoryNode" />
-              <item name="skillta" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -137,7 +115,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/skillta" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -165,10 +143,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1314" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="70" y="-8" width="1858" height="1096" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16985646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11846496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -342,13 +319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skillta/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skillta/demandForecast/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -385,16 +355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skillta/skillta/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="77" column="19" lean-forward="false" selection-start-line="77" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
-          <folding>
-            <element signature="e#1582#2044#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/fbprophet/forecaster.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
@@ -403,22 +363,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/skillta/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="e#22#31#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skillta/skillta/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+          <folding>
+            <element signature="e#1582#2044#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/skillta/demandForecast/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="64" column="14" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="14" />
+        <state relative-caret-position="289">
+          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
           <folding>
             <element signature="e#77#777#0" expanded="false" />
             <element signature="e#830#1093#0" expanded="false" />
-            <element signature="e#1160#1648#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skillta/demandForecast/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+        <state relative-caret-position="310">
+          <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="45" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
