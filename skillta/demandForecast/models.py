@@ -1,3 +1,5 @@
+import random
+
 from django.db import models
 
 
@@ -39,17 +41,22 @@ class DemandForecast(models.Model):
     class Meta:
         db_table = 'demand_forecast'
 
-    result_id = models.AutoField(primary_key=True)
-    country_code = models.CharField(max_length=20)
-    skill_id = models.BigIntegerField()
-    query_id = models.BigIntegerField()
-    execution_date = models.DateTimeField()
-    jobs_since = models.DateTimeField()
-    period_days = models.IntegerField()
-    day = models.IntegerField()
-    week = models.IntegerField()
-    year = models.IntegerField()
-    result = models.FloatField()
+    result_id = models.CharField(primary_key=True, max_length=20, db_column='result_id')
+    country_code = models.CharField(max_length=20, db_column='country_code')
+    skill_id = models.BigIntegerField(db_column='skill_id')
+    query_id = models.BigIntegerField(db_column='query_id')
+    execution_date = models.DateTimeField(db_column='execution_date')
+    jobs_since = models.DateTimeField(db_column='jobs_since')
+    period_days = models.IntegerField(db_column='period_days')
+    day = models.IntegerField(db_column='day')
+    week = models.IntegerField(db_column='week')
+    year = models.IntegerField(db_column='year')
+    result = models.FloatField(db_column='result')
+
+    def save(self):
+        if not self.result_id:
+            self.result_id = random.seed(a='int')
+            super(DemandForecast, self).save()
 
 
 # DemandResult Model.
