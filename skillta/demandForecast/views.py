@@ -48,7 +48,7 @@ def fbProphet(request):
                     df = pd.DataFrame(data=dat)
                     df['y'] = np.log(df['y'])
                     df['cap'] = 8.0
-                    df.head()
+                    df.head(52)
                     # Create Prophet
                     model = Prophet()
                     model.fit(df)
